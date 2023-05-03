@@ -1,13 +1,13 @@
-import blessed from '../../assets/feelings/blessed.jpg';
-import excited from '../../assets/feelings/excited.jpg';
-import happy from '../../assets/feelings/happy.jpg';
-import loved from '../../assets/feelings/loved.jpg';
-import angry from '../../assets/reactions/angry.png';
-// import happy from '../../assets/reactions/happy.png';
-import like from '../../assets/reactions/like.png';
-import love from '../../assets/reactions/love.png';
-import sad from '../../assets/reactions/sad.png';
-import wow from '../../assets/reactions/wow.png';
+import blessed from '@assets/feelings/blessed.jpg';
+import excited from '@assets/feelings/excited.jpg';
+import happyFeelings from '@assets/feelings/happy.jpg';
+import loved from '@assets/feelings/loved.jpg';
+import angry from '@assets/reactions/angry.png';
+import happy from '@assets/reactions/happy.png';
+import like from '@assets/reactions/like.png';
+import love from '@assets/reactions/love.png';
+import sad from '@assets/reactions/sad.png';
+import wow from '@assets/reactions/wow.png';
 import {
   FaBirthdayCake,
   FaComments,
@@ -22,7 +22,8 @@ import {
   FaUser,
   FaUserCheck,
   FaUserPlus,
-  FaUsers
+  FaUsers,
+  FaVideo
 } from 'react-icons/fa';
 
 export const sideBarItems = [
@@ -64,12 +65,18 @@ export const sideBarItems = [
   },
   {
     index: 7,
+    name: 'Videos',
+    url: '/app/social/videos',
+    iconName: 'FaVideo'
+  },
+  {
+    index: 8,
     name: 'Notifications',
     url: '/app/social/notifications',
     iconName: 'FaRegBell'
   },
   {
-    index: 8,
+    index: 9,
     name: 'Profile',
     url: '/app/social/profile',
     iconName: 'FaRegUser'
@@ -80,7 +87,7 @@ export const feelingsList = [
   {
     index: 0,
     name: 'happy',
-    image: happy
+    image: happyFeelings
   },
   {
     index: 1,
@@ -106,6 +113,7 @@ export const fontAwesomeIcons = {
   FaUserPlus: <FaUserPlus className="icon" />,
   FaHeart: <FaHeart className="icon" />,
   FaImages: <FaImages className="icon" />,
+  FaVideo: <FaVideo className="icon" />,
   FaRegBell: <FaRegBell className="icon" />,
   FaBirthdayCake: <FaBirthdayCake className="icon" />,
   FaRegUser: <FaRegUser className="icon" />
@@ -189,7 +197,8 @@ export const emptyPostData = {
   reactions: [],
   imgVersion: '',
   imgId: '',
-  createdAt: ''
+  createdAt: '',
+  video: ''
 };
 
 export const reactionsMap = {
