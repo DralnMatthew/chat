@@ -47,7 +47,6 @@ describe('ResetPassword', () => {
     expect(buttonElement).toBeEnabled();
   });
 
-
   describe('Success', () => {
     it('should display success alert', async () => {
       render(<ResetPassword />);

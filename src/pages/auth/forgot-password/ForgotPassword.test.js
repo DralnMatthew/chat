@@ -33,7 +33,6 @@ describe('ForgotPassword', () => {
       userEvent.type(emailElement, 'manny@test.com');
       expect(buttonElement).toBeEnabled();
     });
-
   });
 
   describe('Success', () => {
